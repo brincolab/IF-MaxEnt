@@ -1,0 +1,17 @@
+# CMake Files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+BMS
+cmake_install.cmake
+
+# Raster files
+Rasters/
+
+# Weight files
+Weights/
+
+# iPython Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
