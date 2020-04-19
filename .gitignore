@@ -6,11 +6,14 @@ BMS
 cmake_install.cmake
 
 # Raster files
-Rasters/
-MatlabRasters/*
+Rasters/*.txt
+MatlabRasters/*.mat
 
 # Weight files
-Weights/
+Weights/*.txt
+
+#MaxEnt Params
+MaxEntParams/*.mat
 
 # iPython Notebook
 .ipynb_checkpoints
