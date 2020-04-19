@@ -29,6 +29,7 @@ int main(int argc, char *argv[]){
         bms.setUnitCurrent(i,Ie);
     }
     
+    /*
     //Set w_i,i+1 = Exitatory || w_i,i+2 Inhibitory
     for (int i=0;i<N;i++){
         for (int j=0; j<N;j++){
@@ -36,6 +37,7 @@ int main(int argc, char *argv[]){
             if(abs(i-j)==2) bms.setWeight(i,j,iw);
         }
     }
+    */
 
     std::ifstream wfile;
     float value;
@@ -44,7 +46,9 @@ int main(int argc, char *argv[]){
         for (int j=0; j<N;j++){
             wfile >> value;
             bms.setWeight(i,j,value);
+            printf("%d %d %f ",i,j,value);
         }
+        printf("\n");
     }
     wfile.close();   
 
@@ -54,7 +58,7 @@ int main(int argc, char *argv[]){
     RasterBlock *raster_sp = NULL;
     sprintf(chaine_plot_spont,"Rasters/N%dew%lgiw%lg.txt",N,ew,iw);
     raster_sp = bms.getRasterBlock(transient,T);
-    raster_sp->save(chaine_plot_spont,"unit-by-line");
+    raster_sp->save(argv[3],"unit-by-line");
 
   return EXIT_SUCCESS;
 }
