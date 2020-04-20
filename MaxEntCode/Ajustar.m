@@ -18,7 +18,7 @@
 
 
 
-Ajustar('MatlabRasters','MaxEntParams','N21ew0.2iw-0.2.mat');
+
 
 
 function Ajustar(loadfolder,savefolder,loadfile)
