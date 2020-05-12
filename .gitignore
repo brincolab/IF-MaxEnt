@@ -15,7 +15,14 @@ Weights/*.txt
 #MaxEnt Params
 MaxEntParams/*.mat
 
-# iPython Notebook
+#SpecificHeat Files
+SHParams/*
+
+# iPython Notebook and python extras
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+__pycache__/*
+
+#Other files
+*.zip
 
